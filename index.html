@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="scripts/app.js" defer></script>
+    <title>Fuzzy</title>
+  </head>
+  <body>
+    <div class="shadow"></div>
+    <div class="light-bulb-container">
+      <div class="bulb-light" id="bulb-light"></div>
+      <img
+        class="light-buld-img"
+        id="bulb"
+        src="https://res.cloudinary.com/izynegallardo/image/upload/c_scale,h_55,w_38/v1727428265/lightbulb_transparent_orj3rp.png"
+        alt="light-buld"
+      />
+    </div>
+    <div id="ceiling-light"></div>
+    <main class="main">
+      <div class="container">
+        <div class="top">
+          <div class="slideContainer">
+            <div class="range-container">
+              <input
+                type="range"
+                orient="vertical"
+                min="1"
+                max="100"
+                value="1"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+            <div class="value-container">
+              <p>Value: <span id="demo"></span></p>
+            </div>
+          </div>
+
+          <div class="phone-container">
+            <div>
+              <img
+                class="phone-border"
+                src="https://res.cloudinary.com/izynegallardo/image/upload/v1726377266/iphone_SE_ivqceg.png"
+                alt="border"
+              />
+            </div>
+            <div class="transparency" id="transparency"></div>
+            <div class="luminousity" id="luminousity"></div>
+            <div class="opacity"></div>
+            <div class="time-container">
+              <p class="time" id="time">Loading...</p>
+            </div>
+            <div class="screen-container">
+              <img
+                class="phone-screen"
+                src="https://res.cloudinary.com/izynegallardo/image/upload/v1726389525/iphone_se_screen_yjk2si.png"
+                alt="screen"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="radio-container">
+            <div class="indoor-outdoor">
+              <p>Change Place:</p>
+              <form>
+                <input type="radio" name="option" value="Indoor" checked />
+                <label for="indoor">Indoor</label><br />
+                <input type="radio" name="option" value="Outdoor" />
+                <label for="outdoor">Outdoor</label><br />
+              </form>
+            </div>
+            <div class="light-switch">
+              <p>Light Switch:&nbsp;&nbsp;</p>
+              <form id="lightRadios">
+                <input
+                  type="radio"
+                  name="light-option"
+                  value="0"
+                  id="low"
+                  checked
+                />
+                <label for="low">Low</label><br />
+
+                <input
+                  type="radio"
+                  name="light-option"
+                  value="0.5"
+                  id="medium"
+                />
+                <label for="medium">Medium</label><br />
+
+                <input type="radio" name="light-option" value="1" id="high" />
+                <label for="high">High</label><br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
