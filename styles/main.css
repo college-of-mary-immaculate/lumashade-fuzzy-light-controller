@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-repeat: no-rep;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/dbriapahp/image/upload/v1726920498/bg_zpmyuv.jpg');
+  background-color: #000000;
+}
+
+p {
+  color: #ffffff;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  z-index: 1;
+  position: absolute;
+  background-color: #000;
+}
+
+.light-bulb-container {
+  margin: 0 auto;
+  height: 10%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bulb-light {
+  margin: 20px auto;
+  height: 33px;
+  width: 33px;
+  z-index: 1;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.light-buld-img {
+  top: -20px;
+  margin: 20px auto;
+  z-index: 2;
+  position: absolute;
+}
+
+.range-container {
+  width: auto;
+  height: 200px;
+}
+
+.value-container {
+  width: auto;
+  height: 20px;
+}
+
+.slideContainer {
+  width: 140px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+#myRange.slider {
+  top: 3rem;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 16px;
+  z-index: 1000;
+  opacity: 0.5;
+  border-radius: 12px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  outline: none;
+  display: flex;
+  position: relative;
+  writing-mode: vertical-lr;
+  direction: rtl;
+  vertical-align: bottom;
+  background: #d3d3d3;
+}
+
+.slider:hover {
+  transition: 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #04aa6d;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: #04aa6d;
+}
+
+main {
+  margin: 0 auto;
+  padding: 3rem;
+  width: auto;
+  max-width: 1440px;
+  min-height: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.element {
+  height: 200px;
+  width: 51px;
+  background-color: rgb(72, 67, 67);
+}
+
+.element:nth-child(2) {
+  background-color: rgb(162, 219, 239);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 2rem;
+  gap: 1.5rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top {
+  display: flex;
+}
+
+.phone-container {
+  width: 150px;
+  height: 350px;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.phone-border {
+  top: 0;
+  left: 0;
+  width: 150px;
+  z-index: 0;
+  position: absolute;
+}
+
+.transparency,
+.opacity,
+.time-container,
+.luminousity,
+.screen-container {
+  width: 133px;
+  height: 240px;
+  top: 2.2rem;
+  left: 0.5rem;
+  position: absolute;
+}
+
+.transparency {
+  opacity: 0.1;
+  z-index: 1000;
+}
+
+.luminousity {
+  opacity: 0.6;
+  z-index: 1;
+  border-radius: 4%;
+}
+.opacity {
+  opacity: 1;
+  z-index: 0;
+  transition: opacity 0.5s ease;
+  position: relative;
+}
+
+.phone-screen {
+  z-index: 999;
+}
+
+.time-container {
+  z-index: 0;
+}
+
+#time {
+  font-size: 6px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+.bottom {
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.indoor-outdoor,
+.light-switch {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+
+form {
+  gap: 0.5rem;
+  display: flex;
+}
